@@ -1,0 +1,12 @@
+﻿{
+  "Id": "p2T3mh_AAEiaetu645ucCw",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/p2T3mh_AAEiaetu645ucCw",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/lWG-IKY0Lk-jg9MjVsLF-g",
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Created": "2021-01-09T10:00:34.6278126Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.6278126Z"
+}

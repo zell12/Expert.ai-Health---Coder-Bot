@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="caFdiQfUXkGfcgZeoy9q8A" DesignTimeRectangle="142, 140, 94, 29" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlname='button1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='button1' check:text='OK' /&gt;" ScopeSelectorArgument="&lt;wnd app='cmp.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="OK" TextMethod="AttributeText" TextSelector="&lt;wnd /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0kLUTdQf58kW7VqbreNYhVQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="c9fbadf4c7e7b3061d7473e514d2907a.png" xmlns="">0BZe6_o5mXUqYhRrb9a9Abg</imageRef>
+</TargetAnchorable>

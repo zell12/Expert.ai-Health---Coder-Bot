@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="NtMDVfGixEKs3_b-JwqetA" DesignTimeRectangle="28, 72, 364, 30" ElementType="Text" FriendlyName="'Incoming claim'" FullSelectorArgument="&lt;wnd ctrlname='linkLabel1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='linkLabel' /&gt;" ScopeSelectorArgument="&lt;wnd app='cmp.exe' ctrlname='MainMenu' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Incoming claim packages to route" TextMethod="AttributeText" TextSelector="&lt;ctrl role='link' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0YsvodAiupkKmuXh25Of6IQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="58256a18b6a6ea88d158d1d54fc2fccf.png" xmlns="">0xBWOpT4ObEerX9nYqn1Dlw</imageRef>
+</TargetAnchorable>

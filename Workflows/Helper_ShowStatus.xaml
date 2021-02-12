@@ -1,0 +1,204 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Helper_ShowStatus" this:Helper_ShowStatus.in_Message="Posting Sales Order to Web App" this:Helper_ShowStatus.in_MessageType="SUCCESS" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uwa="clr-namespace:UiPath.WPFInteractive.Activities;assembly=UiPath.WPFInteractive.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Message" Type="InArgument(x:String)" />
+    <x:Property Name="in_MessageType" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>1068.8,989.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.WPFInteractive.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Notifications.Wpf</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>AttendedRobotStatus.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.WPFInteractive.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Notifications.Wpf</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>AttendedRobotStatus</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1079.2,924.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="1500" Name="timeToCloseToast" />
+      <Variable x:TypeArguments="x:String" Default="Status" Name="title" />
+      <Variable x:TypeArguments="x:Boolean" Name="use_Toast">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <If Condition="[use_Toast]" sap:VirtualizedContainerService.HintSize="1037.6,769.6" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_MessageType]" sap:VirtualizedContainerService.HintSize="496.8,620" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+          <Switch.Default>
+            <Sequence sap:VirtualizedContainerService.HintSize="431.2,388.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uwa:ToastNotify InterProcessPipeName="{x:Null}" JSMethodToInvoke="{x:Null}" WindowIdToFocus="{x:Null}" DisplayName="Toast Notify Show" sap:VirtualizedContainerService.HintSize="389.6,163.2" sap2010:WorkflowViewState.IdRef="ToastNotify_4" Message="[in_Message]" TimeToClose="[timeToCloseToast]" Title="[title]" Type="Information">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uwa:ToastNotify>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="389.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[in_Message]" />
+            </Sequence>
+          </Switch.Default>
+          <Sequence x:Key="SUCCESS" sap:VirtualizedContainerService.HintSize="431.2,388.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uwa:ToastNotify InterProcessPipeName="{x:Null}" JSMethodToInvoke="{x:Null}" WindowIdToFocus="{x:Null}" DisplayName="Toast Notify Show" sap:VirtualizedContainerService.HintSize="389.6,163.2" sap2010:WorkflowViewState.IdRef="ToastNotify_5" Message="[in_Message]" TimeToClose="[timeToCloseToast]" Title="[title]" Type="Success">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uwa:ToastNotify>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="389.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[in_Message]" />
+          </Sequence>
+          <Sequence x:Key="WARNING" sap:VirtualizedContainerService.HintSize="431.2,388.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uwa:ToastNotify InterProcessPipeName="{x:Null}" JSMethodToInvoke="{x:Null}" WindowIdToFocus="{x:Null}" DisplayName="Toast Notify Show" sap:VirtualizedContainerService.HintSize="389.6,163.2" sap2010:WorkflowViewState.IdRef="ToastNotify_6" Message="[in_Message]" TimeToClose="[timeToCloseToast]" Title="[title]" Type="Warning">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uwa:ToastNotify>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="389.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[in_Message]" />
+          </Sequence>
+          <Sequence x:Key="ERROR" sap:VirtualizedContainerService.HintSize="431.2,388.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uwa:ToastNotify InterProcessPipeName="{x:Null}" JSMethodToInvoke="{x:Null}" WindowIdToFocus="{x:Null}" DisplayName="Toast Notify Show" sap:VirtualizedContainerService.HintSize="389.6,163.2" sap2010:WorkflowViewState.IdRef="ToastNotify_7" Message="[in_Message]" TimeToClose="[timeToCloseToast]" Title="[title]" Type="Error">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uwa:ToastNotify>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="389.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[in_Message]" />
+          </Sequence>
+        </Switch>
+      </If.Then>
+      <If.Else>
+        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_MessageType]" sap:VirtualizedContainerService.HintSize="496.8,481.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+          <Switch.Default>
+            <Sequence sap:VirtualizedContainerService.HintSize="375.2,248" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="[in_Message]" WarnLvl="False" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[in_Message]" />
+            </Sequence>
+          </Switch.Default>
+          <Sequence x:Key="SUCCESS" sap:VirtualizedContainerService.HintSize="375.2,248" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_2" InfoLvl="False" Message="[in_Message]" WarnLvl="True" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[in_Message]" />
+          </Sequence>
+          <Sequence x:Key="WARNING" sap:VirtualizedContainerService.HintSize="375.2,248" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="True" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_3" InfoLvl="False" Message="[in_Message]" WarnLvl="False" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[in_Message]" />
+          </Sequence>
+          <Sequence x:Key="ERROR" sap:VirtualizedContainerService.HintSize="375.2,248" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="True" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_4" InfoLvl="False" Message="[in_Message]" WarnLvl="False" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[in_Message]" />
+          </Sequence>
+        </Switch>
+      </If.Else>
+    </If>
+    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1037.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+  </Sequence>
+</Activity>

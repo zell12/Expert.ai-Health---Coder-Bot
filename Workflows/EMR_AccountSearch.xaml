@@ -1,0 +1,243 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="EMR_AccountSearch" this:EMR_AccountSearch.accountNo="386157" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="accountNo" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>883.2,2003.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Services.Common</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Account search in Frontend" sap:VirtualizedContainerService.HintSize="512,1938.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Helper_ShowStatus workflow" sap:VirtualizedContainerService.HintSize="470.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Workflows\Helper_ShowStatus.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Message">["Searching for account " + accountNo]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_MessageType">INFO</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="470.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="475.2,145.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiPath Data Service" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Timeout="2" Version="V1">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,736.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Data'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Timeout="2">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/UiPatcmful/Demo/dataservice_/entities/cc70caff-0d53-eb11-b9ed-000d3a22aa2e" DesignTimeRectangle="234, 238, 32, 21" ElementType="Text" FriendlyName="'Data'" FullSelectorArgument="&lt;webctrl parentid='mat-tab-label-0-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-tab-label-0-1' tag='DIV' type='' aaname='Data' check:text='Data' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAZCAYAAABZ5IzrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKESURBVEhL7ZRbiIxhGMe3pKTkgiKFkuTCjQvuuHC6EHcu5EJRwrbbbiuiFVa0Fyt2Y5XDJjmvYstmJStC2VKrbRdtMrOzc5755nw+/X3/x7x2RjO+maTmYv71XnzP+3zv+3tObwNqTHUgI9WBjFQHMlJtA72YiKHhoOn3mt1oxvpOOwY+R5HN5Z0qVCKdgxbJIlflfyWBDtzx4uloFO0DPqw+bRVbyyMNqUzlp998H8b2y05EEtURlQTqGQ7mLUA8lcPeWx7MaTJjcCyWtwImbxqdQwFsuuiQdf1dCNFkTjIyYU9hnZ7ZZSem0Xjfi45BP4LxrGT57WQcrf0a1p6zybnD3+JFWTQEoj7+SGBeyxSaH2ryzQPOPw9g5UkrDt3zYluPE7MOm9D2WJOL9932YG6zWdaqU1bZ94Qz8EWz2HzJgY0XHGh6oEn26TM0PhNoRUBmLY0V7dNFJWC0KrJwIiuXrumwwR3KiA99S5UsXdCMo5YkFrTNBEpVBDTpSmHp8WIgRnt3JCK9xbKwPIzYGSwPxAC+u3+Vmv/t6XNLKzDLShUBvdbrzB9VJGPWJJYcs2DxUQvOPPOj/1NEesIIqPdNSErLye37EJZ72ApVAfn1TOy44hIgglHcp59qclWyvwEpG3vKHsiITZXMEGhDl0NSSsfleilUw6qxv6pHSr+z+vRM+9Lo1gHZnAqI07az14WFRyx4oj8fI6aEQCgbm5htsPuGW84xBFKLl2ztduLll1jRw8jDt+h2+hB2vz5VhFJAFLM3v3VKfBbppR23pfDqa1zKTBv3WMJd19zlgaoVR7ywR/4UM8pxL3xQGRhf8HKP7D8B/Q/VgYxUBzJSjQEBPwHCADN6JrPGSwAAAABJRU5ErkJggg==" InformativeScreenshot="5815eddf39b4251bc0f4a2a8366d96a8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Data Service' /&gt;" SearchSteps="FuzzySelector, Image" Text="Data" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="201, 228, 98, 40" FriendlyName="'Data'" FullSelectorArgument="&lt;webctrl aria-role='tab' id='mat-tab-label-0-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='tab' id='mat-tab-label-0-1' tag='DIV' type='' aaname='' check:text='Data' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAsCAYAAACXHM1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMWSURBVHhe7ZhLSFRhFMeFCCKIFgVFUEFEtGjTona16LWI2rWIFkFBVKIoRlEYlVG4KEopgx4S0dughCQjMooKEgJDtEKiGcfRGce56jiv67z+3XPy8xFToxB5Js4PzoX57pk78P2+c77vTgEUkagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoagYoYgT87w9hoL9rtGYWejG2soe1H+KIp0ZSZokdjIDK5JGZorfk4BYMftuB/GkJYry+n6sPOnlsZKHFhKpyc/yjXdhbL3kR8TOPzNixVQ3hUZGgHgig903+zCryI2G1tjIKOAKJlHZOIgNF3wc194OITqc4Qpp70lgjVNpS451ofBeEBUNAwjF01x1bzriKK2zsPpMNz+36WtcXFXlhRjiw3cbc0o6UfzA4s80kWefDWL5cS8O3A1iS7UfMw66UPbIYgF7bvVhdrGbY8UJL9/vC6fQH01j40Uf1p/3oei+xdVIOY1tY8IlkDdi3FYSy8q7JrQmWv1mpYftNE/+qopuBIZSnEO52VpZctxm1eIZxryyMeFSyBsxHb0JLD46UQyt/jvNEd57qF1R26IK8Id+L4ZEfgv8bIH0vV21AW6RVHWSyBsxr5x9gCbQrOxW7zAWHfFg4WEPTj0dQN3HCO8ZucTUvB7ilkcnvdr3Yf4dapEqJgfZxAw4lbHtci+LIUEE3ac8cxgwrexPYswY7Tk9gykeM61MxeTAiFl3zsethiZsqdOizMZujstXnJVPeaed01ZXfxJVjijaxI0YOp1tr+nF/EMePHaO3c0um2WYMdrsqT3uvB7g56iYHBgxJmiyN1f58eJzbMILJk3yJmecckjaXucURnKMGIKqaW5pJ+cscFpeW3cCL7/Euf3RGN2j1rbjakDF/G3oaDx+D/kVqjA6Jo9/MSXB9I/AVF5W/zV5L+Z/RcUIRcUIRcUIRcUIRcUIRcUIRcUIRcUIRcUIZVSM+W9KY/qDffDVIVuCxvQE++CrQ7YEjekJ9hGK2dCQFypGZNj4ATIR+U7r2H+QAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Data" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[accountNo]" Timeout="2">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/UiPatcmful/Demo/dataservice_/entities/cc70caff-0d53-eb11-b9ed-000d3a22aa2e" DesignTimeRectangle="121, 280, 274, 36" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARYAAAAoCAYAAAA7StUmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPmSURBVHhe7dvPSxRhGMDx/sYungRRhIogUkSCIILs0B4KwoMKpYjQpUOXQtqDBBEIIv44LIGrkQUDggquiClP+8z7zuzM7DvrvuPYD/f7gYdqZnbw8n55Z9xuHB6fCMMwTJlDWBiGKX1SYan/CGTta11Wa1sMwzBdjTZD25FsSRwWPbHzM5BfZ2cCAN3SZmg7knGJw6LVISoAitB2aEPawqJbGgAoShtCWACUirAAKB1hAVA6wgKgdIXDcrT9WRYmHsvg8G25OdCc4REZnXgjn7YP7RUAepV/WM4PZWV6XPo0Jjlza3pZjs7t9QB6jmdYjmV9csQEZGhcnr2rSdA4Nacae1JbnJLRIROXwclVOTJnAPQYv7BszstgGJWn8n7XHsva/SAPwriMyOymPVZEUJXK2JiMJadSlcCe/vs2ZK75M81t2H8CiHmE5VS+vDC7kUeLnd+j7C8+Da/re7Hc/FQBG3NhSLKLdmNeAzPXXNL/AsIC5PEIS01m72hYKvLpwB7Kc7AkT3Rnc/+tfLeHfIQBmXetWLOYKx//hX0LYQHyeIRlVWY0FgNTsm6P5PO5NiuQaiUvLG5mJxNNRarZ7jgeq1JB0B1S8zGrGt0n8ciVvnfyc1FYzJ/xNR4/N3BdXc2O5eSzPL/EjiX4WLEL9eLHnrbHo+xjlI1KMiTm/okA2c+ko2ADl3yvk7pXFJT2+6SiBfQgj7D4v2Ppf12zR/y14tKatkcgRzRUGBsbhPA+2Ze+2c+FQcjsdMJrHLufmOuxzH+3BVxHHmFp8vqt0EN5980euxS7WG1ckgEw8XHsasJQtB/PxiodlvT1ufeOud6xEBZA+YUl9T2WhzKztCX7J/bU6aHUl+Zl1H4Tt/9lwd8IdWJ3GtHCde1qWmOjEH3GThgC547FEZbsTieFsAB5PMPS1MU3b0dfTsoD/fvdKVlv2M+VpO0xp+OuIn19rNuwsGMBCvEPi9X5/wptycJde9w3LtlFnxGGIlq4rncjTa3dhlno2Xcz0U6nU1jy7t1CWIA8hcNyocaqzBSMi/lNj2NRh9FJHzfXJqKQCVPeeQ1LHBxXWKJIpHY7yRe2hAXIc3VhUZeIi1nsJgDx5LzzMPFojXOxx+c1TCYK6Z2P+7Ene+/W7oewAHmuNizqMnEB8F+6+rAoG5e+e69k5aIv1wH47/2ZsKjGngTsVoCe8OfCAqBnEBYApSMsAEpHWACUjrAAKB1hAVA6wgKgdM6wrH2ty6+zM3sJAHRP26ENaQtL/UcgOz8D4gLAizZD26ENaQtLFBetjm5pGIZhuhltRjIqOqmwMAzDlDGEhWGYkudEfgMoDq3pclAPXQAAAABJRU5ErkJggg==" InformativeScreenshot="9a04df156f4315d522227706e49f96f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Data Service' /&gt;" SearchSteps="FuzzySelector, Image" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NHighlight Color="Gold" ContinueOnError="True" DisplayName="Highlight '386155'" HighlightTime="1.5" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NHighlight_1" Timeout="2">
+                    <uix:NHighlight.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cloud.uipath.com/UiPatcmful/Demo/dataservice_/entities/cc70caff-0d53-eb11-b9ed-000d3a22aa2e" DesignTimeRectangle="875, 384, 149, 48" ElementType="Text" FriendlyName="'386155'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aaname=' {0} ' parentid='*_AccountNumber' tag='DIV' /&gt;&quot;, accountNo)]" FuzzySelectorArgument="&lt;webctrl aaname=' 386155 ' parentid='*AccountNumber' tag='DIV' type='' check:text='*386155*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAA0CAYAAACZ3pqKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI2SURBVHhe7d0xTvMwHIbxHqMjG9eqGDgK6thzFPUkHbqyMCPExILYTGz/nTiOnRaJVzLS85M8JG5aJD+y803f5vPr2zEYyrG5vLw6BkM5Ng4QIzLIERnkiAxyRAY5IoMckUGOyCBHZJAjMsgRGeSIDHJEBjkigxyRQY7IIEdkkCMyyBEZ5IrIPtxpd++2d3E8HD/svnl7dg82V50/78e56rx5Pz667dPFrpL5b8exd2ebLX87jMV3oEdZZLbI48Jd3GFYyMO4yvF6CqeYtwjKz0/XUQhsuL8IxD+/e3bvdlnyz7WiRd+myEIkj+70ZteD81MWQ2M+LfzsszXjTrR3h9pn/S648rz//jJY/A8r72S/2cnqu9bMENnJ5mtBhp1qZ7tcGNlRGXZZP5/mls+jX5XIsnejxULm7035ruYj89cxthRCK7paZOFedlzGYzWFVgZeHu3o2cpOZgudFt6Ou/rOluJavqjXQrt6tAYxpOZ7WOX4Rp9WI8sXchZcEv416cNKO5ndN62Ybossfq4ZWeM30Z8psjGYzM2RxV2n3LVujyzuhPPns+9s/m3FPXQp28nK46l471kcf/lxOShDWHx+Uosv3Cvfycbr4reuHaXoSnFcxsVML+6LXcjCac6H0Kb5WmDe6g43Pl/uUlf+NnRr/Z0M+ANEBjkigxyRQY7IIEdkkCMyyBEZ5IgMckQGOSKDHJFBjsggR2SQIzLIERnkiAxyRAY5IoMc/6kqQz7YySDm3A+1x9cCA8Yg5QAAAABJRU5ErkJggg==" InformativeScreenshot="ad75095a174d5bbc88a2e0dc92853dda.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Data Service' /&gt;" SearchSteps="Selector" Text="386155" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="873, 332, 113, 46" ElementType="Text" FriendlyName="'Account Number'" FullSelectorArgument="&lt;webctrl aaname=' Account Number ' parentid='mat-tab-content-2-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Account Number ' parentid='mat-tab-content-2-1' tag='DIV' type='' check:text='Account Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAyCAYAAABiWZRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKASURBVHhe7ZfLbcJAEIZTYyrINQ1YHFMDEqIJxCU9oIgaUKSUwAXltvFjZ3d2Zh0bmxzy6z98EnjMzuMbW+LpevsOBAtKBYRSAaFUQCgVEEoFhFIBoVRAKBUQSgWEUgGhVEAoFRBKBYRSAaFUQCgVEEoFhFIBoVRAqlIvh7fw/PLaszv5+H+h66M5fFVj19s57Ko9foXjprv+Fo6f+vojkdz78FGNr6MiVZqKbM8m/j+QxZwjtRwuotTTfmh0u/8lsRG/eQ+XNXGT42M7XM9PUByCnPP5Hpr4/Rjv7RCB+k3T4/KrM4W0vFZqRUCckeRL9R5iXeo8iZVLks886lrNA1T2US5Zytl6GuK5PidVD9QPt8MKiaTBLYyron3eEamO4YxFUlP+5VItzWasDps7M7qYPbkGl1MthJFqGkhPrdogueYkxSHcHVcNmO2elmpF5N/ImdOv37bXoqYVUmP9WUj8TapXzshSU4/VGubn1JRS5eB0o29oalhTcS+so5Q2W6p8b5G8i6SqpWgO58VSnaDROZp+3D3yucLo4mcKqcl+BWlgrVQ7/IGySVewlfhwqe139fQ3E1Lt2YulqjPLa/K5wtiMFFlqamoEGaAUrAoqEsyNV4TYLbSL9KdSW1KeHivVv+rXS638pu+p8vo1zJJqB5sZb6ogDXhhPJ1vh6tYIHWgNhwvtaxtot+WR0i1uEU2SI4ZUnPhtZvsk+MbtUN7bHx3ikO4Q2o5OHu+jptYetPkJSvfYu398Z71Uu/5S6PnP/NJJThQKiCUCgilAkKpgFAqIJQKCKUCQqmAUCoglAoIpQJCqYBQKiCUCgilAkKpgFAqIJQKCKXC8R1+AGpYEkG/mUxoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Account Number" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NHighlight.Target>
+                  </uix:NHighlight>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="74bcc6ae5d21b8098ecf59486a9aa987.png" Selector="&lt;html app='chrome.exe' title='UiPath Data Service'/&gt;" Url="https://cloud.uipath.com/UiPatcmful/Demo/dataservice_/entities/cc70caff-0d53-eb11-b9ed-000d3a22aa2e" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470.4,1599.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: OpenEMR" sap:VirtualizedContainerService.HintSize="433.6,1368" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" Version="V1">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1151.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[accountNo]" Timeout="2000">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/main/tabs/main.php?token_main=6YS17aJBH9uyhtgrTRudHMwN5XKypFF6HxYDKn6s" DesignTimeRectangle="25, 208, 175, 39" ElementType="InputBox" FriendlyName="'386155'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" ImageBase64="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" InformativeScreenshot="594dee8b01bc20d9804dde572264ff05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR' /&gt;" SearchSteps="FuzzySelector, Image" Text="386155" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='INPUT' type='text' /&gt;" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ClickType="Single" DelayAfter="3.5" DisplayName="Click" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/main/tabs/main.php?token_main=6YS17aJBH9uyhtgrTRudHMwN5XKypFF6HxYDKn6s" DesignTimeRectangle="163, 208, 38, 39" ElementType="Button" FriendlyName="'BUTTON  search_globals'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aaname='Search for patient by entering whole or part of any demographics field information' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAArCAYAAAAOnxr+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM3SURBVFhH5Zn9S1NRGMf9u7IXA4kstWxG9mJY7KfEqPzBigKLNU25am5WakQ03yBholSWDVfZMpXCt8aSMaE3S5nIDXRIfLtnu3eu3edez80tu3ThA2PPOfd+dl6ec+5ZRkfPJMzA/yva7p4gv98oGVv22pAOMnOvYcf+auQVN+LU+U40t42QArxkrKz8hBG8rwI4fbEdOwuqkXu0ISpEiSpk5tqwLd8e/by7qA6Xrj8kRdaDW3Ti/WeUVriw50idSsYouw4JEJqfk0JacIm6HrzG9n1VUldWkQ82yta8WC9Yz90npSjWFa1ufCR1cb3qYamADZsDJ2+SYsnoil4VepF3rIF8SKpg4zf/uIOUS0RT9EbLQNolFZjsQettUlCBFO17Oo6cwwJ503TBhkGplMYoSYZK9Nt3EdmFNeTN0g2TbdHItyrRGudj5BT93dZUyJIWCK3x+ptocHYhZSloI9TeGtQXbWx9Jq0em9OaCqxVC0406Ysa73InKjunMDYrQlxeReSHiNC0H/fq7xBl+WFjVVN05O2stDwaSOxnBuGbW4XWJX4YRTlVjwOWripsPbRoa9sLA90+gLEl2Ui6xI8heD1TeOKZQSC8Ji+OD8BC1tcnS9rwJOfVuOjZy51kJYoy76KssowxV3I3O+F4IyKixFsTY/xkF9bSogUlDrKCGjd84ahFtMXoMl3wzsXKRPxDRHx92MaFFGX7S6qCmncIRRWk1rpLxWOUvZRbPTyDSiLOAylKFaRJENXpVotHFl0KQSDiPGxQtD8+kRZ8XUSc4UR3MFYGwWEizgcpyt/1NthHxZhEZB59V9TxEtcnyCUQ6HWq4ryQovyTScI6jEBsWkuyIgK+IQiCG5XCIPqmF+UZL12Rr+iwEvU50JxMRtITw9Lkx5e4kc4VDsHxB7Ka6clYwpexutExOg8xQZgtowFPP+zda91vVFY34RteQjkoT5Sd83OnKd0llJGOfWhcVsqndiJOobspYaRrm2e50IUyzq7n2uaZZuPMMMWrCMM0L3cMU7wuK5jiAELBFEc6CqY4JFMwxbGjgikOchPZtKPx5BunCvYDUvpnA/Xlv4hJRCfxC7EUdtZaI4O+AAAAAElFTkSuQmCC" InformativeScreenshot="b381234e96600aaceb44d65096ccab75.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR' /&gt;" SearchSteps="FuzzySelector, Image" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Full Name'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Timeout="1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/main/finder/dynamic_finder.php?search_any=386155" DesignTimeRectangle="257, 635, 272, 52" ElementType="Text" FriendlyName="'Full Name'" FullSelectorArgument="&lt;webctrl src='/openemr/interface/main/finder/dynamic_finder.php?search_any=386*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Full Name' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl src='/openemr/interface/main/finder/dynamic_finder.php?search_any=386*' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Full Name' tag='TH' type='' check:text='Full Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARQAAAA4CAYAAAA8aQeAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUDSURBVHhe7dpPTxtHGMfxvgVeiyXLkhERsuQIC2E5SEFIIKMKxUrUqIjakgMxGC/+UzBpCIYDh55yyCUHLlx84NI2SdUmqFVL2qbvI5fq6ex6d702Y0dqhoXQ7+EjkWdnHtaR9sfMrD97//4fAQATCBQAxhAoAIwhUAAY4wdK4+A7APgoBAoAYwgUAMYQKACMIVAAGEOgADCGQAFgDIECwBgCBYAxBAoAYwgUAMYQKACMIVAAGEOgADCGQAFgDIECIOB7qT156dBfH45AAeCr7b2QyvapVJqnUm+90I4ZhkAB4KvsvJZS9a3DevSzdswwBAoAaeyrrc7eS1mr/y6rlb8c6/XfnBWLfU07R+PTDpTtpkxGIhJx5KXg1dfzbk1JN6UcnAPgnJra3mw038hD609ZKf/teGj9oVYsb5xrujk64QRK8AHX+a8PvZFAOZZc2uuhJB5IYU8zjpDCNVVXK5DN3R/VNudMVjfe+YFi/7xWO3Ou2WN0c/sRKP2BoowvPpVq/zgCBdeU/UZnY/u0J0z8UCm/c67Z2yHd3H7hB4rJh/GCAiUSSUnW6htHoOAaslce9uFrafPtuTDxlDbPxPrmJ6kffHiVQqBoA0WZqMtKKzCOQME1VH3ySspf/9pZnQxgXytv/aJWMq+0PYKuVqAMHNf70M+uu3XjgTIrM3PT/tzJL4+64wb1bLVlpViXmVtpSYzFOtdj45K4lZd71ZPufKWw4M63ey89l5Wv8jKVGO3U4tMyo2r2Vqu8uhaop2Tq7rPzWzBnnCWZqZTEnJ4xiSc/l2zxSDsW0Km3fnDOSKxHr4eq2ucoaqyuRxCB0tN7XnJbzySbCP7bHTeoZ8899OvdOgUDJRoflWjPWFtMklPT2nqm0Pb7NA5OpLCY1ozrGF/QnAEBIbgSh7J+QFx6oCQ7AWCtybg7P5rZ7cwfGCi7alVTl0KjLVV3i2St5v35kblD/+EOBkokkZflx6reOpLFwGezQ2i2pMJDrXyWF1LduncfSnV1yQ+TaKYpK/ZbqZ7x07LY6IwFwkSgaHvbKwDv4XRXB+UH3RXBoJ6tE7U8bEupYsmUN/bGmhTd68FAmQhsp8pL8349cntfLLfeqNUl4dX9Pm25f9utRdKyWHPH2lQQjrnjg/2BsLDlGdR776nMeVuf2B25Xwn8rmDP1rEs370jSe/85JzuffWeoRy7v78vUNR2xavrP5+6r5hXGyLYBwgJgTKot1It5f2/+GPp+e5qwe8ZXMko9mHszVnJZFXAeLULCJRZvzYEgYJL8IkEypHkJt26Elag2IGxnE12e3m8nq1vuw/3TUuK3mvmYN14oBzLvYxX69vyAJfsagXKVlMm/AdoXj0sndeuPYecSniBouweykz/FsPr+XhfMl7thnfI2pbiF/OBNzCmA6V3fDRTl+KO+3q6dSLl2qFkF7oHuECYrlagOH99dWcRMYkGHupQA0WxCnd6X9H6Pe0DUs39JlKBADQfKPaboZz2/8n1wc8MXIwrFijK7nPJzU1L3AmQmMQz9hfEVO0SzlC6+oIj2NO9386Xy0YlOWPJ8s5Fbnlc9krI/mJccrwbdvGU84W6XLnbGwhTOIEC4H+BQAFgDIECwBgCBYAxBAoAYwgUAMYQKACMIVAAGEOgADCGQAFgDIECwBgCBYAxBAoAYwgUAMYQKACMIVAAGEOgADDGD5SRkREA+Agj8i/OCDn6pJJpfgAAAABJRU5ErkJggg==" InformativeScreenshot="001e41d91227f1bf6b3f7850545f0306.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Full Name" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='TD' /&gt;">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="257, 533, 168, 31" ElementType="Button" FriendlyName="'Add New Patient'" FullSelectorArgument="&lt;webctrl src='/openemr/interface/main/finder/dynamic_finder.php?search_any=386*' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl src='/openemr/interface/main/finder/dynamic_finder.php?search_any=386*' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='' aaname='Add New Patient' check:text='Add New Patient' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKwAAAAjCAYAAAAJ1+HVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPNSURBVHhe7ZzNahsxEID7XD30BXrooU9Q6LW95AV6KPQBTE6hb9BTffSht1JoIJgeAslhC4Em4N7W4IQ0TDVaSTsjjbRrvHEsGMFHiX5Gs5rPst2Dn93ePoCi1IIKq1SFCqtURRD2/OIG3rz/DM9fflSUgwB9RC9FYXHwxatP4kJFeQrQR/RSFFZaoCiHgAqrVIUKq1SFCqtUhQqrVIUKq1SFCqtUxX6FPbmEv5t7uDO05z/gnTRHUQrsV9jFCkJbNzCT5oxkttyYIBs4PZHHE3DvgT3nVwDtciGOITie3XNE/Kno8uCtWchzx7D1WT4hlQq7gNP1Btp1WTDGZMJmct+zsCzPkwZak9Y4afHsdhN8mMfbo05hsUC4fhtJJhK2XTbQmPSTeU8prMHekldnrE9Ghc3y+vgnnF6soPntWN13smL7t4E/vt/w6/s3OBJiSGBxuoKdWXnEg6EvDljBXBAq3JjYTLHHCWvGbezoLVQSluXQ55nsI9yQpVykMSus39/FC82LHPf7Z7B5mjMi8XK5exlxf8zDt5BPbg8aewceVVj6QMNt7IOhpP1cu0d8syRCdWJToew6KpgrUE4ShIqS7Ivrk3hEAltIIkhx7/INRfOgfT6f2XKVPHssHIsd51rK3a3HFmLY+fS8K71h7SGObvSBC4jFprdDfwNk17EC9EgiUPh4JALLSy5YWB/tj/3NVZxfdOMRkjwTYTh8/pCwA7m7cX5JxGvkGFPwqMIefb2G1v03luXOPChpod/Q3lzC7K0ch5IUK7lB4r8dVChWoJ40dnm8+3bt4jBh3Y0uNVtoWlCcizH8vy5W/K5BwDx4k5+FtvHCjsudn1PcV6mwCfZgXAvF3Yahw/RzhNuGCsXk6tlWWFYoFrPLs1Sw8CUJ10USb58HxZ0REZ7PF2SydeHC5nOP5ZT6hD0moi5hM6JJn7HigqZfSmKp5XUUURQfy3xu7HMbjuWfZW7y8oXtvkyembX5t3ekKKxwRtsJO5S7NB73CXtMREXClg6Sj7G3asRKRffs5tNbqFtTKlReFOy3jT6TfVYunvRliM1J8pQpChu/GN2Z9/OFc2TC+r9zuUt1iPukOdOwX2G/XEP4GLs6hw/SnBzirdjDblD/t2/Yj0VgIjhpXcPDLYpgyI87+SLRWA7YyAsEsaKzNV2coUIP5cn2NXsm853EQcpY2DgGtpD7GGEN8R5h7m7sV1hF2REVVqkKFVapChVWqQoVVqkKFVapChVWqQoVVqkKUVj9bS3l0Cj+tpb+eqFyaKCP2V8vVJTD5wH+A3Bvsdk7vCRUAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Add New Patient" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='' /&gt;" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset Position="BottomLeft" X="50" Y="21" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Timeout="0.5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/patient_file/summary/demographics.php?set_pid=30" DesignTimeRectangle="305, 763, 67, 36" ElementType="Text" FriendlyName="'Contact'" FullSelectorArgument="&lt;webctrl src='../../patient_file/summary/demographics.php?set_pid=30' tag='IFRAME' /&gt;&lt;webctrl id='header_tab_Contact' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl src='../../patient_file/summary/demographics.php?set_pid=30' tag='IFRAME' /&gt;&lt;webctrl id='header_tab_Contact' tag='A' type='' aaname='         Contact' check:text='Contact' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAoCAYAAACsEueQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJQSURBVGhD7ZY7SwNBEID9T/lPKWLhs7TwNEUqsbIxKVLFP6DoiZUYlUjwClNECD5BsBG0EETGm71sso+5zeY0ipcpPpR9zN58O7M6s1k9g/f3T4ZgZiE4ICeYWM7SekhOMLGc2ZU9coJJkXN8fgf4Fi2uHQDO5xXMD/PEfE0HiCbn9e0DtuotMlDewbwx/1Q50ypGgvmTcrC08HcstdpOG05ad9C5fobbh5fc0uk+Q/PiHqqNNsyv7ov81RYbyMHe29g+hcurJzJQ3sG852JB6v99AzlYMa3okdw4LWD+6MGSs1w+hJt7etO0gPmjB0sO/qQ2TBvSB8shYDkOWI4DluOA5ThgOQ6+JSeql6BQKGgU6z1y7X8ko5wmBCij3NTHowYUzbEfQFxCsQERMZcVn5gZ5PSgVvzdCvk/csJK3D4VCKk5i0Sk2nZBaM+j6LCsrBt8tL1fTUjbE6PHpvcHoTumythyxAd5tQ7Reth28diw6oYfOkws2adWJnnLcaxArV5xaSWoRXINcX68Rp4zkcpBOT4tlXa4Pt6XY8g29/okImX4Ju8TM5Mcn8pJlSiqR7ZlIsdc5y2nX4lqi0g5oy5xInJ8giKTliMuiWijP5Ujb2v4RtCkHa6PZ5Wji6DGRiU/ah4ZXw4iHj/iZlDcoOWIB9ES6yfH/gtp70sqSY1NnK88yHZMm2xyBP3DNdQyp9aY855y+utEDDluvDdBqFdOgnm+LViLafANOfmH5ThgOQ5YjgOW44DlOGA5DjQ5u0ddYGhYjgOW44DlpNKFL5wRnOnRCdW9AAAAAElFTkSuQmCC" InformativeScreenshot="344cc05d5baff1ee757f2ba40602ab16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR' /&gt;" SearchSteps="FuzzySelector, Image" Text="Contact" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Timeout="0.5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/patient_file/summary/demographics.php?set_pid=30" DesignTimeRectangle="444, 763, 79, 36" ElementType="Text" FriendlyName="'Employer'" FullSelectorArgument="&lt;webctrl src='../../patient_file/summary/demographics.php?set_pid=30' tag='IFRAME' /&gt;&lt;webctrl id='header_tab_Employer' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl src='../../patient_file/summary/demographics.php?set_pid=30' tag='IFRAME' /&gt;&lt;webctrl id='header_tab_Employer' tag='A' type='' aaname='         Employer' check:text='Employer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAoCAYAAACCV8YCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKKSURBVGhD7ZaxbhNBEIZ5p3unK0IBQpQUBLlwhahoiIurzAuA4BAVwoCMIq4ghZEiSEBCSoMERSSEhvvXd3uzu3PBcuYUbE/xyb7d2dnbb3fHvnZ+/ocMHUymIiZTEZOpiCjz1bsTenDwlm7de07X7zw1auACTuBGcgYCmT9//aaHxVxMZnTAEVxxdyCQaSJXB664O+Bl4vgiCMd58viQXs9P6OjTGX35+sOoOVqc0ez9KR1MD+nm3WfOFb/y+O5loh7cf/SGPnz8LiYzOuDoRi0Uzrg/LxMncl59EwcbKXAFZ9yfl3l79II+n8oDjRS4grPWH669l4kHaZDRD5yZTCVMpiImUxGTqYjJVGTjZJajjLLRTOy7ataS6RaUxYypFGK12U6ZV7Qgk6nIzsls+91nUwby4rjuO6ZJHre145Z9aKuKPR8Tlw9x7nLM4mvyKVVBX1qC3BwsLpwzo/2SxVdTyrM9mpT4RL9c0oaTyV+ILTZsq1+wap6ZaC55mat7+XjupQSeJx4zo30+r6PbOJ+Db4CTx8Y0z0GMwPoykZzDFhgv2IsS2jpxUgwIZYS5JVFpu5PF8zo5XHa4GSCYJ5bbw/oyk0Vf1B+Lk9qkmLQ9XaR85RDnc0Vxgdz21EkEManwmN2Q2eRYnix8Z2IuyOHZGpnRQsLcq11zB2o0xiFfUPv6cjA2VSauV7ewpo0tPs7d+wOU/FhA2pgmdXy8YS4+Op1VUccGp3dImagpEa2Ey8jMi5mX6oikpLlboWxMz0ZL0sK+nhxDyhwGSbgu0kZoskMyV6iNl2RnZCZ/zAdg+2W6eoc6+I+/Pwr8RzI3H5OpiMlUJJH55OWCDB1MpiImUxGTqcaC/gKbjhVqXpdIaAAAAABJRU5ErkJggg==" InformativeScreenshot="024c242ff0d15f648eefae411f5ab0ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR' /&gt;" SearchSteps="FuzzySelector, Image" Text="Employer" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2400454b78e129843abc96d2eb827fcb.png" Selector="&lt;html app='chrome.exe' htmlwindowname='main' title='OpenEMR'/&gt;" Url="http://healthcare-solutions.westeurope.cloudapp.azure.com:8081/openemr/interface/main/tabs/main.php?token_main=6YS17aJBH9uyhtgrTRudHMwN5XKypFF6HxYDKn6s" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="436.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

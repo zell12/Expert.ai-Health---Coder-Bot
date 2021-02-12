@@ -1,0 +1,13 @@
+﻿{
+  "Id": "S0oZNURCxkmAreVBpSn06g",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/S0oZNURCxkmAreVBpSn06g",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/2td0wJEpjEebhZ35zZnMoQ",
+  "Name": "OK",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-01-09T10:00:34.7275485Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.7275485Z"
+}

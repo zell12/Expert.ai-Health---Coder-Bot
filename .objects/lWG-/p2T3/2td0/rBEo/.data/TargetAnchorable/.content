@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="TBE3j7wozU2SxfVYwmDyGA" DesignTimeRectangle="142, 51, 195, 25" ElementType="InputBox" FriendlyName="'Username:'" FullSelectorArgument="&lt;wnd ctrlname='textBox1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='textBox1' /&gt;" ScopeSelectorArgument="&lt;wnd app='cmp.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Username:" TextMethod="FullTextScrapping" TextSelector="&lt;wnd /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="55, 55, 73, 16" ElementType="Text" FriendlyName="'Username:'" FullSelectorArgument="&lt;wnd ctrlname='label1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='label1' check:text='Username:' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Username:" TextMethod="AttributeText" TextSelector="&lt;wnd /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1DBvnmNFKMUaBLGwXjfjqVg</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0xCMcBlMfeES4lUCGjZwcsg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="d86c9f506809e7ee20167bfb916c3b8d.png" xmlns="">0noDTqxOYDk6kagV8Pt2HHg</imageRef>
+</TargetAnchorable>

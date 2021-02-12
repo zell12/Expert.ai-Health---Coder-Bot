@@ -1,0 +1,12 @@
+﻿{
+  "Id": "KfYkDEiWfkqa0iQCQaHXUQ",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/KfYkDEiWfkqa0iQCQaHXUQ",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/p2T3mh_AAEiaetu645ucCw",
+  "Name": "Main Menu",
+  "Type": "Screen",
+  "Created": "2021-01-09T10:00:34.8172812Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.8172812Z"
+}

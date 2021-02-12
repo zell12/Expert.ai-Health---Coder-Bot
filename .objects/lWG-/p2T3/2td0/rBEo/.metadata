@@ -1,0 +1,13 @@
+﻿{
+  "Id": "rBEodNxKUEa9aX22ZWdOlQ",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/rBEodNxKUEa9aX22ZWdOlQ",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/2td0wJEpjEebhZ35zZnMoQ",
+  "Name": "Username:",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-01-09T10:00:34.7853675Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.7853675Z"
+}

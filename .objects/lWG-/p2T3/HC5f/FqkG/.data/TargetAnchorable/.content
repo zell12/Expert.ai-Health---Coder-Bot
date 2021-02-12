@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="XuA6jU7ZP0S7-zvxrM2XbA" DesignTimeRectangle="64, 135, 663, 188" ElementType="Table" FriendlyName="'table  DataGridView'" FullSelectorArgument="&lt;wnd ctrlname='dataGridView1' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='dataGridView1' /&gt;&lt;ctrl name='DataGridView' role='table' automationid='' /&gt;" ScopeSelectorArgument="&lt;wnd app='cmp.exe' ctrlname='Routing' /&gt;" SearchSteps="Selector, FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0kXagfdV3dk2vliLSikG01w</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="b1a47f06c4c44fd607a4537ee4740aec.png" xmlns="">0rWzeRfPls0aTKMJ7jVBKfw</imageRef>
+</TargetAnchorable>

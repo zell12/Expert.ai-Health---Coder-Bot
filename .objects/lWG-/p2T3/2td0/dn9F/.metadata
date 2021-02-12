@@ -1,0 +1,13 @@
+﻿{
+  "Id": "dn9FS20Tc02I4wyGccho8w",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/dn9FS20Tc02I4wyGccho8w",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/2td0wJEpjEebhZ35zZnMoQ",
+  "Name": "Password:",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Created": "2021-01-09T10:00:34.7554802Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.7554802Z"
+}

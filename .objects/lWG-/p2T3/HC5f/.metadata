@@ -1,0 +1,15 @@
+﻿{
+  "Id": "HC5fBZzYR0ywfz-JjI_H3A",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/HC5fBZzYR0ywfz-JjI_H3A",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/p2T3mh_AAEiaetu645ucCw",
+  "Name": "Account List",
+  "Type": "Screen",
+  "Created": "2021-01-09T10:00:34.6437775Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.6437775Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

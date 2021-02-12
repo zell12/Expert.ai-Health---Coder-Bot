@@ -1,0 +1,13 @@
+﻿{
+  "Id": "FqkGTMAjJ0qz90IH7GN3Uw",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/FqkGTMAjJ0qz90IH7GN3Uw",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/HC5fBZzYR0ywfz-JjI_H3A",
+  "Name": "Table",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-01-09T10:00:34.6736648Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.6736648Z"
+}

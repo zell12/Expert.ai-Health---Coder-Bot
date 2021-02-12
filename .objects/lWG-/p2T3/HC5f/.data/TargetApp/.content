@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp ContentHash="q51qiXlrg0CCrmJBZAVUrA" Selector="&lt;wnd app='cmp.exe' ctrlname='Routing'/&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetApp.FilePath>
+    <p:InArgument x:TypeArguments="x:String">
+      <p:Literal x:TypeArguments="x:String" Value="" />
+    </p:InArgument>
+  </TargetApp.FilePath>
+  <imageRef attrName="IconBase64" xmlns="">0vpMRl1NNYkGPvstsZvbpvA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ddef048b93972356790a9e18d81b2dcf.png" xmlns="">0nvu3eAzy6EqdnGlvhHdNOw</imageRef>
+</TargetApp>

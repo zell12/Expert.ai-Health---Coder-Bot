@@ -1,0 +1,72 @@
+{
+  "name": "Expert.ai Health Inpatient Coding",
+  "description": "ICD10 Extraction and coding of diagnosis codes from unstructured medical records and performing upstream and downstream processes and validations",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DataService.Activities": "[20.10.1]",
+    "UiPath.Excel.Activities": "[2.9.3]",
+    "UiPath.ExpertSystem.Activities": "[0.1.6942.34183]",
+    "UiPath.Form.Activities": "[1.1.8]",
+    "UiPath.IntelligentOCR.Activities": "[4.10.3]",
+    "UiPath.OmniPage.Activities": "[1.7.0]",
+    "UiPath.PDF.Activities": "[3.3.0]",
+    "UiPath.Persistence.Activities": "[1.1.9]",
+    "UiPath.Python.Activities": "[1.1.6863.33404]",
+    "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.UIAutomation.Activities": "[20.10.6]",
+    "UiPath.WebAPI.Activities": "[1.6.0]",
+    "UiPath.WPFInteractive.Activities": "[3.0.2]",
+    "UiPathTeam.AttendedRobotStatus.Activities": "[1.0.30]",
+    "UiPathTeam.Healthcare.ICD10": "[1.0.0.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "Demo",
+      "namespace": "In_Patient_Coding",
+      "uniqueReference": "2UzEyrbDBF5koJ2S6z1NGeWc9Tx5YfEW4bytRSXIuIY="
+    }
+  ],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.2.0",
+  "projectVersion": "1.0.10",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": true,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "92b32200-e1c4-4edb-b569-e1cc1b5c8f8d",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}

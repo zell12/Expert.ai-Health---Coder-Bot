@@ -1,0 +1,16 @@
+﻿{
+  "Id": "fAHOHjknZ0SxQiNdnAzelQ",
+  "Reference": "gAWS-ON7Kka8QolyjfKpZg/fAHOHjknZ0SxQiNdnAzelQ",
+  "ParentRef": "gAWS-ON7Kka8QolyjfKpZg/KfYkDEiWfkqa0iQCQaHXUQ",
+  "Name": "Incoming claim",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-01-09T10:00:34.845206Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-09T10:00:34.845206Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

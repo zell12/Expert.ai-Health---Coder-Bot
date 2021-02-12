@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp ContentHash="PqLHAYrEuEOAuegZ85I9ug" FilePath="C:\Temp\_Dev\BlueLogo_RPA_UiPath\_POC\SWH\Demo Application" Selector="&lt;wnd app='cmp.exe' ctrlname='MainMenu'/&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">05-5uS3LPEk28IQS7EhYRrg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="34e7ac3186d1926da10eefa97941964f.png" xmlns="">0XHCfDMj8iUGiVeZ9d6PqAg</imageRef>
+</TargetApp>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp ContentHash="GLWxNsCt7ECkGKuyuU7EQw" Selector="&lt;wnd app='cmp.exe' ctrlname='Login'/&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetApp.FilePath>
+    <p:InArgument x:TypeArguments="x:String">
+      <p:Literal x:TypeArguments="x:String" Value="" />
+    </p:InArgument>
+  </TargetApp.FilePath>
+  <imageRef attrName="IconBase64" xmlns="">0zLUqxlH30kW2qPvWfJBs2Q</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="74aa2fb2e9cced88ddb95bf3793f893d.png" xmlns="">0K93YOfppHECpNYizXidbGA</imageRef>
+</TargetApp>
