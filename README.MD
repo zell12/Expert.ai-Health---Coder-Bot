@@ -14,9 +14,9 @@ Automated administration and generation of clinical summary for in-patient cases
 
 2. Copy the package (.nupkg) and paste it into `C:\ProgramData\UiPath\Packages`.
 
-3. Open UiPath Assistant, highlight Expert.ai process. Click ![enter image description here](https://i.imgur.com/nokp2La.png) and click Install.
+3. Open UiPath Assistant, highlight Expert.ai process. Click ![enter image description here](https://i.imgur.com/nokp2La.png?2) and click Install.
 
-4. Click ![enter image description here](https://i.imgur.com/rdhdSQZ.png) to run the process.
+4. Click ![enter image description here](https://i.imgur.com/rdhdSQZ.png?1) to run the process.
 
 ![enter image description here](https://i.imgur.com/E6ghVwT.png)
 
